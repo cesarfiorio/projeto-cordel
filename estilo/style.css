@@ -1,0 +1,112 @@
+@charset "UTF8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --font1:verdana,Geneva,tahoma,sans-serif;
+    --font2:'Passion One', cursive;
+    --font3:'Sriracha', cursive;
+}
+
+/*para aplicar variaveis globais apra a o eu html */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+html, body {
+    font-family: var(--font1);
+    min-height: 100vh;/* o tamanho minimo sera 100% da altura da minha view port "vh" */
+    background-color: dark;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+
+}
+
+header > h1{
+    font-family: var(--font2);
+    padding-top: 50px;
+    text-transform: small-caps; 
+    font-size: 10vw;/*para variairar o tamanho de acorodo com o tamanha da largura "width" da tela */ 
+
+
+    /*para transformar todo o texto no que eu quiser, por exemplo "uppercase" transformaria tudo em letra maiuscula. Em " samll-caps continua com as miuscula normal. */
+
+}
+
+header> p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline; 
+
+} 
+
+section{
+    font-family: var(--font3);
+    padding-top: 10vh;
+    padding-bottom: 10vh;/* colocando como " vh" quando eu aumento e diminuo a tela, a secao que esta com vh aumenta e diminui tambem*/
+    line-height:2em ;
+    padding-left: 30px;
+    font-size: 3.8vw;
+
+
+}
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: white;
+    color:black;
+    
+}
+
+section.imagem{
+    background-color: rgb(56, 56, 56);
+    color: white; 
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.411);
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.562);
+    padding: 8px;
+    display: inline-block;
+    text-shadow: 1px 1px 0px black;
+     /* uma caixa que se adapta ao tamanho do conteudo*/
+}
+
+section#img01{
+    background-image:url('../imagens/background001.jpg') ;
+    background-position: right center;
+    
+    
+}
+
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-size: cover;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px ;
+}

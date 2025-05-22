@@ -2,10 +2,6 @@
 
 This project is a simple and elegant website to showcase the poem *Cordel Moderno* by Milton Duarte. The layout follows the style of Brazilian "literatura de cordel", combining modern web technologies with a traditional poem format.
 
-## 📸 Preview
-
-![preview](imagens/preview.png) <!-- Use a real screenshot from the site -->
-
 ## 🌐 Live Demo
 
 🔗 [Click here to view the project live](https://cesarfiorio.github.io/projeto-cordel)
